@@ -8,4 +8,7 @@ def key_for_min_value(name_hash)
   end
   value_array.collect do |value1, value2|
     if value1 > value2
+      value2
+    end
+  end
 end
