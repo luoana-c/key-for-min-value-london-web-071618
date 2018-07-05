@@ -6,7 +6,7 @@ def key_for_min_value(name_hash)
   array = name_hash.collect do |key, value|
     value
   end
-  puts array
+  
   i = 0
   min_arr = array[0]
   while i < array.length - 1  
@@ -14,7 +14,7 @@ def key_for_min_value(name_hash)
       min_arr.shift
       min_arr.push(array[i + 1])
     end
-    puts min_arr
+    
     i = i + 1
   end 
   min_arr
